@@ -1,17 +1,23 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Services - NanoLogic PC</title>
-        <link rel="shortcut icon" href="http://www.favicon.cc/logo3d/147736.png" type="image/png">
-    </head>
-<body>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services - NanoLogic PC</title>
+    <link rel="shortcut icon" href="http://www.favicon.cc/logo3d/147736.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="pageTemplate">
     <!-- ----------------------------------------------------------------------------------------- BANNER -->
-    <div class="navigation">
+    <div class="navigationBar">
         <ul id="banner">
             <li id="bannerItem">
                 <a id="bannerItemText" href="index.html">Home</a>
@@ -20,59 +26,108 @@
                 <a id="bannerItemText" href="services.html">Services</a>
             </li>
             <li id="bannerItem">
+                <a id="bannerItemText" href="support.html">Support</a>
+            </li>
+            <li id="bannerItem">
                 <a id="bannerItemText" href="about-us.html">About Us</a>
             </li>
             <li id="bannerItem">
                 <a id="bannerItemText" href="contact.html">Contact</a>
             </li>
+            <li id="loginItem">
+                <a id="bannerItemText" href="login.php">Log In</a>
+            </li>
+            <li id="loginItem">
+                <a id="bannerItemText" href="login.php">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------------------- IMAGE -->
+    <div id="serviceBannerPic" class="text-center">
+        <div id="mainBannerPicText">
+            <h1>Computer Repair Service</h1>
+        </div>
+    </div>
+
+    <div class="servicesList">
+        <h2 class="text-center">
+            <u>Repair & Maintnance Service</u>
+        </h2>
+        <br>
+        <ul>
+            <li>Full PC Service. . . . . . . . . . . . . . . . . . . . .$XXX </li>
+            <dd>- Bacon ipsum dolor amet boudin biltong non exercitation sausage corned beef, ullamco cow. Officia cupim ut quis
+                pork. Sausage duis kielbasa occaecat in pancetta eu commodo ex hamburger voluptate laborum tongue.</dd>
+            <br>
+            <li>PC Troubleshooting. . . . . . . . . . . . . . . . . .$XXX</li>
+            <dd>- Commodo eiusmod fatback kevin excepteur leberkas id non shoulder filet mignon mollit. Sint fatback exercitation
+                velit. Boudin culpa capicola sint, proident reprehenderit short loin duis biltong in consequat. Drumstick
+                frankfurter lorem deserunt, biltong boudin labore culpa ut tongue eu qui tail turkey nostrud. Laborum reprehenderit
+                biltong sint.</dd>
+            <br>
+            <li>Data Retrieval. . . . . . . . . . . . . . . . . . . . . .$XXX</li>
+            <dd>- Quis sint biltong turkey nostrud. Tongue dolore anim drumstick. Meatloaf aliquip ham hock ullamco dolor, shoulder
+                andouille alcatra consectetur kielbasa eu picanha ball tip flank ex.</dd>
+            <br>
+            <li>Data Backup. . . . . . . . . . . . . . . . . . . . . . .$XXX</li>
+            <dd>- Pork chop porchetta quis pig. Brisket aliquip kevin proident fatback, ham ut deserunt excepteur boudin salami
+                alcatra rump. Deserunt drumstick ut turkey porchetta reprehenderit magna consectetur pork chop meatloaf sint
+                fatback labore adipisicing. Salami est bacon, swine nisi ham in cupim. Esse andouille porchetta in labore,
+                laboris kevin mollit frankfurter incididunt pariatur. </dd>
+            <br>
+            <li>Onsite Repair. . . . . . . . . . . . . . . . . . . . . .$XXX</li>
+            <dd>- Burgdoggen sint short ribs fugiat kevin laboris sunt, laborum t-bone flank nisi cupidatat. Meatball salami
+                veniam reprehenderit tail. Pork chop labore drumstick voluptate kevin et tail dolore, do fatback. Est elit
+                commodo in ham. Commodo ex shank non spare ribs nisi consectetur est tempor kielbasa pork chop leberkas reprehenderit.</dd>
+            <br>
+            <li>Device Connections. . . . . . . . . . . . . . . . . . . . . .$XXX</li>
+            <dd>- Reprehenderit sint sausage tongue consectetur pig dolore magna sunt ea. Ex salami consectetur, labore sunt
+                jowl excepteur non enim cupim prosciutto ea. Meatball ham hock est, aliquip turducken pastrami shankle chuck
+                ea pork belly rump pancetta irure dolore. Chuck brisket picanha commodo laborum meatball velit aute spare
+                ribs dolore pork belly fugiat meatloaf id dolor.</dd>
         </ul>
     </div>
 
 
-<!-- ----------------------------------------------------------------------------------------- IMAGE -->
-    <div class="titlePicture">
-        <p>Computer Repair Service</p>
-    </div>
 
+
+
+
+    <!-- ----------------------------------------------------------------------------------------- Footer -->
     <div>
-        <ul class="servicesList">
-            <li class="servicesList">Full PC Service    - $XXX </li>
-                <dd>- Placeholder for description!</dd>
-            <li>PC Troubleshooting - $XXX</li>
-                <dd>- Placeholder for description!</dd>
-            <li>Data Retrieval     - $XXX</li>
-                <dd>- Placeholder for description!</dd>
-            <li>Data Backup        - $XXX</li>
-                <dd>- Placeholder for description!</dd>
-            <li>Onsite Repair      - $XXX</li>
-                <dd>- Placeholder for description!</dd>
-          </ul> 
-    </div>
+        <footer class="foot">
+            <p class="font-34 text-center font-bold font-white margin-zero">NanoLogic PC</p>
 
-
-    <!-- ----------------------------------------------------------------------------------------- BANNER -->
-    <div>
-        <footer>
-            <h2>NanoLogic PC</h2>
-
-        <a class="email" href="mailto:rrrumaiz@gmail.com">rrrumaiz@gmail.com</a>
-        <br>
-        <a href="tel:0000000000">(503) 000-0000</a>
-        <br>
-        <a href="https://github.com/Rumaiz" target="_blank">
-            <i class="fa fa-github " aria-hidden="true"></i>
-        </a>
-        <a href="https://www.facebook.com/Rumaiz1" target="_blank">
-            <i class="fa fa-facebook " aria-hidden="true"></i>
-        </a>
-        <a href="https://twitter.com/GiveRum?lang=en" target="_blank">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/rudy-ruiz-745a6883/" target="_blank">
-            <i class="fa fa-linkedin " aria-hidden="true"></i>
-        </a>
-          </footer>
+            <a class="email" href="mailto:rrrumaiz@gmail.com">rrrumaiz@gmail.com</a>
+            <br>
+            <a href="tel:0000000000">(503) 000-0000</a>
+            <br>
+            
+            <br>
+            <ul id="banner">
+                <li id="bannerItem">
+                    <a id="bannerItemText" href="index.html">Home</a>
+                </li>
+                <li id="bannerItem">
+                    <a id="bannerItemText" href="services.html">Services</a>
+                </li>
+                <li id="bannerItem">
+                    <a id="bannerItemText" href="support.html">Support</a>
+                </li>
+                <li id="bannerItem">
+                    <a id="bannerItemText" href="about-us.html">About Us</a>
+                </li>
+                <li id="bannerItem">
+                    <a id="bannerItemText" href="contact.html">Contact</a>
+                </li>
+                <li id="loginItem">
+                    <a id="bannerItemText">Copyright &copy; 2018 - NanologicPC - All rights reserved.</a>
+                </li>
+            </ul>
+        </footer>
     </div>
 
 </body>
+
 </html>

@@ -1,16 +1,68 @@
-.navigation{
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+
+.uppercase {text-transform: uppercase;}
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+.vertical-middle {vertical-align: middle;}
+.vertical-bottom {vertical-align: bottom;}
+.font-georgia {font-family:Georgia, sans-serif;}
+.font-40 {font-size: 40px;}
+.font-34 {font-size: 34px;}
+.font-28 {font-size: 28px;}
+.backgroundColor{background-color: #333333;}
+.text-white {color: whitesmoke;}
+.table {display: table;}
+.clearfix {overflow: auto;}
+.position-absolute {position: absolute;}
+.font-bold {font-weight: bold;}
+.margin-zero {margin: 0 0 0 0;}
+.margin-auto {margin: auto;}
+
+
+.pageTemplate {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    display: table;
+}
+
+.leftCol {
+    height: 600px;
+    width: 48%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.rightCol {
+    height: 600px;
+    width: 48%;
+    display: table-cell;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------- BANNER */
+.navigation {
     
 }
 
 #banner{
+    position: relative;
+    height: 75px;
+    width: 100%;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+    border: 0;
+    background-color: #333333; 
  }
 
- #bannerItem {
+#bannerItem {
     float: left;
 }
 
@@ -22,22 +74,110 @@
     text-decoration: none;
 }
 
-#servicesList {
+#loginItem { float: right;}
+
+/* ----------------------------------------------------------------------------------------- BODY */
+#mainBannerPic {
+    height: 500px;
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/computerPanoEdit.png");
+    background-position: right bottom;
+}
+
+#mainBannerPicText{
+    padding: 10%;
+}
+
+#servicesPic {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/gigabytePCinternalsGray.jpg");
+    background-size: 350px 350px;
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin-left: 15%;
+}
+
+#contactUsPic {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/aboutUsPic.jpg");
+    background-size: 350px 350px;
+    height: 350px;
+    width: 350px;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#aboutUsPic {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/contactUsPicGray.jpg");
+    background-size: 100% 100%;
+    height: 350px;
+    width: 350px;
+    float: left;
+}
+
+.boxLink {
+    width: 350px;
+    height: 350px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+
+.storyRow {
+    width: 100%;
+    height: 500px; 
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.storyLeftCol {
+    width: 40%;
+    float: left;
+    border-right: 2px solid black;
+    height: 500px; 
+    padding-right: 2%;
+}
+
+.storyRightCol {
+    width: 50%;
+    float: right; 
+    height: 500px; 
+    padding-right: 3%;
+}
+
+.servicesList {
     font-size: 20px;
+    border: 1px solid black;
+    margin: 5%;
+    text-align: left;
+    width: 75%;
+    padding: 5%;
 }
 
 .topicHeader {
     text-align: center;
 }
 
-footer { 
+#bottomBannerPic {
+    height: 250px;
+    background-image: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url("/images/boisePanoCrop.jpg");
+    background-position: bottom;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ----------------------------------------------------------------------------------------- FOOTER */
+.foot { 
     position: relative;
     left: 0;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     background-color: #333333;
     color: white;
     text-align: center;
+    padding-top: 0;
 }
 
 p {
@@ -46,9 +186,216 @@ p {
     padding-top: 15px;
 }
 
-.titlePicture {
-    background-image: url("http://www.annagorin.com/blog/wp-content/uploads/2011/10/luckypeak.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    height: 275px;
+
+.logInWindow {
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    height: 300px;
+    margin-top: 200px;
 }
+
+.supportBody {
+    /* text-align: center; */
+    width: 100%;
+}
+
+
+
+#banner a:hover{
+    /* color: rgb(129, 105, 105); */
+    transition: .3s ease-in;
+    color: black;
+    text-shadow: 10px 10px 0 white;
+}
+
+a{
+    color: white;
+}
+
+ul {
+    list-style-type:none;
+}
+
+.indent {
+    text-indent: 5%;
+}
+.about {
+    margin: 5%;
+}
+
+#aboutUs {
+    background-image: linear-gradient(rgba(255,255,255,0.0),rgba(255,255,255,0.0)), url("/images/redMotherboard.jpg");
+    background-size: 100% 100%;
+    height: 250px;
+    width: 250px;
+    float: left;
+    margin: 2%;
+}
+
+#serviceBannerPic {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/keyboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 275px;
+    background-position: center;
+}
+#contactBannerPic {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/meetings.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 275px;
+    background-position: center;
+}
+#aboutBannerPic {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("/images/woods.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 275px;
+    background-position: center;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+.experienceAndQualifications{
+      background-color: gainsboro;
+}
+
+  /* * {
+    margin: 0;
+    padding: 0; } */
+  
+a {
+    color: #666;
+    text-decoration: none; }
+    a:hover {
+      color: #4FDA8C; 
+}
+  
+input {
+    font: 16px/26px "Raleway", sans-serif; 
+}
+  
+  /* body {
+    color: #666;
+    background-color: #f1f2f2;
+    font: 16px/26px "Raleway", sans-serif; } */
+  
+.form-wrap {
+    background-color: #fff;
+    width: 320px;
+    margin: 3em auto;
+    box-shadow: 0px 1px 8px #BEBEBE;
+    -webkit-box-shadow: 0px 1px 8px #BEBEBE;
+    -moz-box-shadow: 0px 1px 8px #BEBEBE; 
+}
+
+.form-wrap .tabs {
+    overflow: hidden; 
+}
+.form-wrap .tabs h3 {
+    float: left;
+    width: 50%;
+}
+.form-wrap .tabs h3 a {
+    padding: 0.5em 0;
+    text-align: center;
+    font-weight: 400;
+    background-color: #e6e7e8;
+    display: block;
+    color: #666; 
+}
+.form-wrap .tabs h3 a.active {
+    background-color: #fff;
+}
+.form-wrap .tabs-content {
+    padding: 1.5em;
+}
+.form-wrap .tabs-content div[id$="tab-content"] {
+    display: none; 
+}
+.form-wrap .tabs-content .active {
+    display: block !important; 
+}
+.form-wrap form .input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: inherit;
+    font-family: inherit;
+    padding: .8em 0 10px .8em;
+    border: 1px solid #CFCFCF;
+    outline: 0;
+    display: inline-block;
+    margin: 0 0 .8em 0;
+    padding-right: 2em;
+    width: 100%; 
+}
+.form-wrap form .button {
+    width: 100%;
+    padding: .8em 0 10px .8em;
+    background-color: rgb(51, 54, 52);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase; 
+}
+.form-wrap form .button:hover {
+    background-color: #4FDA8C; 
+}
+.form-wrap form .checkbox {
+    visibility: hidden;
+    padding: 20px;
+    margin: .5em 0 1.5em; 
+}
+.form-wrap form .checkbox:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1; 
+}
+.form-wrap form label[for] {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer; 
+}
+.form-wrap form label[for]:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #CFCFCF;
+    width: 17px;
+    height: 17px;
+    top: 0px;
+    left: -14px; 
+}
+.form-wrap form label[for]:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background-color: transparent;
+    top: 4px;
+    left: -10px;
+    border: 3px solid #28A55F;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); 
+}
+.form-wrap .help-text { 
+    margin-top: .6em; 
+}
+.form-wrap .help-text p {
+    text-align: center;
+    font-size: 14px; 
+}
+  
